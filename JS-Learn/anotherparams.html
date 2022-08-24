@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    window.onload=function(){
+     createAllStates("Israel","100m","1948","israel.jpg");
+     createAllStates("france","100m","31313","france.jpg");
+
+    }
+function createAllStates(name,pop,year,img){
+document.body.innerHTML+=`<h2>${name}</h2>`
+document.body.innerHTML+=`<div>${pop}</div>`
+document.body.innerHTML+=`<div>${year}</div>`
+document.body.innerHTML+=`<img src="images/${img}" width="100 alt=${name}">`
+}
+</script>
+<body>
+    <h1>list of states:</h1>
+</body>
+</html>

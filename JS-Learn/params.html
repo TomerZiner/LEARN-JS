@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    window.onload=function(){
+        minus(9,3);
+        changeText("#id_h3" ,"Hello","red");
+        changeText("#id_h4" ,"User","blue");
+        changeText("#id_h5" ,"Wassap","Yellow");
+
+    }
+function minus(x,y){
+    document.querySelector("#id_h2").innerHTML= x-y
+}
+function changeText(tag,text,color){
+    document.querySelector(tag).innerHTML=text
+    document.querySelector(tag).style.color=color
+}
+</script>
+</head>
+
+
+<body>
+    <h2 id="id_h2"></h2>
+    <h2 id="id_h3"></h2>
+    <h2 id="id_h4"></h2>
+    <h2 id="id_h5"></h2>
+
+
+</body>
+</html>

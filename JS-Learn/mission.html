@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function init(){
+
+        }
+      function changeBrazil(){
+        document.querySelector("#img1").src="images/brazil.jpg"
+        }
+        function changeFrance(){
+        document.querySelector("#img1").src="images/france.jpg"
+        }
+        function changeIsrael(){
+        document.querySelector("#img1").src="images/israel.jpg"
+        }
+        function changeUsa(){
+        document.querySelector("#img1").src = "images/usa.jpg"
+        }
+    function changeWidth(){
+    document.querySelector("#img1").width=document.querySelector("#id_input").value;
+
+}
+    </script>   
+</head>
+<body onload="init()">
+    <img src="images/israel.jpg" id="img1" width="300px">
+    <br>
+    <button onclick="changeBrazil()">brazil</button>
+    <button onclick="changeFrance()">france</button>
+    <button onclick="changeIsrael()">israel</button>
+    <button onclick="changeUsa()">usa</button>
+    <br>
+    <h1>Enter width</h1>
+    <input id="id_input" type="text" oninput="changeWidth()">
+    <br>
+    <button>Change!</button>
+</body>
+</html>
